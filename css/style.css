@@ -1,0 +1,374 @@
+@charset "utf-8";
+
+body {
+    font-family: "M PLUS Rounded 1c","游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium","游ゴシック", "Yu Gothic", sans-serif,"Sawarabi Mincho";
+    background-position: center center;
+    background-size: cover;
+    background-color: #ffe4c4;
+    margin: 0px;
+    color: #3b1922;
+    
+}
+
+/**************** 共通部分 *****************/
+
+    /* header */
+
+#header{
+    height: 110px;
+    min-width: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#fff;
+    background-color: rgba(255, 250, 250, 0.8);
+    color:#3b1922;
+    padding: 20px;
+    border: #3b1922 solid 5px;
+}
+  
+#header.fixed{
+    height: 110px;
+    min-width: 100vh;
+    position: fixed;
+    z-index: 999;
+    top:0;
+    left:0;
+
+}
+
+#g-navi{
+    height: 80px;
+    vertical-align: top;
+}
+
+#g-navi button{
+    display: block;
+    background: transparent;
+    border: none;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+ }
+
+nav ul li{
+    text-align: center;
+}
+
+nav ul li button{
+    font-size: 30px;
+    text-decoration: none;
+    color: #3b1922;
+    transition:all 0.3s;
+}
+  
+nav ul li.current button,
+nav ul li button:hover{
+    color:#ffe4c4; 
+}
+
+#header .logo{
+    text-align: left;
+    width: 10%;
+}
+
+/* /header */
+
+
+
+/* button */
+
+.button{
+    /* align-items: center; */
+    margin: auto;
+}
+
+.button input{
+    text-align: center;
+    background-color: #3b1922;
+    color: #fff;
+    width: 80px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.button input:hover{
+    background-color: black;
+}
+
+.right_button{
+    display: inline-block;
+    align-items: right;
+    margin-left: 510px;
+}
+
+.left_button{
+    display: inline-block;
+    margin: 30px 0 0 400px;
+}
+
+#car_date,#car_place,#bag_date,#bag_place,#rs_date,#rs_munu{
+    text-align: center;
+ }
+ 
+#car_date input,.srt_place,.fin_place,.number,#bag_date input,.rsv_place,#rs_date input,.rs_food,.rs_number{
+     margin: 10px;
+     width: 20%;
+     border-radius: 5px;
+     border: #3b1922 solid 2px;
+     height: 60px;
+}
+
+.one_button{
+    text-align: right;
+    margin-right: 510px;
+}
+
+
+/* /button  */
+
+
+p{
+    color: #3b1922;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+h1{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3{
+    margin: 100px 0 0 50px;
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+    background: linear-gradient(transparent 40%, #fff 90%);
+    font-weight: bold;
+    font-size: 26px;
+}
+
+h4{
+    text-align: center;
+    margin-top: 60px;
+    color: #d88d09;
+}
+
+h5{
+    margin: 0;
+}
+
+.explain{
+    margin-top: 40px;
+}
+
+.span{
+   text-align: center;
+}
+
+footer{
+    background-color: rgba(255, 250, 250, 0.8);
+    margin-top: 60px;
+    display: table;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+footer small{
+    text-align: center;
+    font-size: small;
+}
+
+.pr{
+    color: #000;
+    font-size: 20px;
+}
+
+
+
+/************** ログイン画面 (login.html) ***************/
+.login_top{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login_form{
+    text-align: center;
+}
+
+.login_enter input {
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    border-radius: 5px;
+    border: #3b1922 solid 2px;
+}
+
+.error{
+    color: red;
+    text-align: center;
+}
+
+
+
+
+
+/************** ホテル画面 (hotel.php) ****************/
+
+    /* hotel_detail */
+
+.hello{
+    text-align: right;
+}
+
+.logout button{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 550;
+    color: #d88d09;
+    background: none;
+	border: none;
+	outline: none;
+}
+
+.logout button:hover{
+    color: #3b1922;
+    transition:all 0.3s;
+}
+
+
+.hotel_detail{
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.hotel_detail img{
+    text-align: center;
+    display: inline-block;
+    margin: 0 80px 0 30px;
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hotel_detail ul{
+    display: inline-block;
+    align-items: center;
+    vertical-align: top;
+}
+
+.hotel_detail ul li{
+    text-align: left;
+    list-style: none;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+#map{
+    border-radius: 5px;
+}
+
+    /* reserv_detail */
+
+.reserv_detail ul{
+    margin: 50px 50px 60px 880px;
+    display: inline-block;
+    text-align: left;
+}
+
+.reserv_detail ul li{
+    list-style: none;
+    font-weight: bold;
+}
+
+.amount p{
+    text-align: right;
+    margin: 100px 145px 100px 0;
+}
+
+table{
+    width: 80%;
+    margin-top: 70px;
+    background-color: #e2bf81;
+    /* border:#000 solid 2px; */
+    border-radius: 10px;
+}
+
+table tr th{
+    color: #3b1922;
+    border-radius: 10px;
+    
+    
+}
+
+table tr td{
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+table tr td button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: medium;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/************** 車予約確認画面 (car_check.php) ****************/
+
+.check{
+    text-align: center;
+    color: red;
+    margin-top: 100px;
+}
+
+.span{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+/************** 車予約完了画面 (car_fin.php) ****************/
+
+.fin{
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+/************** ルームサービス入力画面 (rs_enter.php) ****************/
+
+.menu{
+    text-align: center;
+    margin-top: 50px;
+} 
+
+.menu a{
+    text-decoration: none;
+    color: #d88d09;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color:#3b1922; 
+}
